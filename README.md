@@ -4,6 +4,8 @@ Set up JIRA in a docker container with MySQL database. Uses the 'standalone' ver
 
 ## Database
 
+TODO - explain database details
+
 ## backups
 
 TODO - container to run backups
