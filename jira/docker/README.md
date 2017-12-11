@@ -12,3 +12,6 @@ ansible-jira-6.4.11-standalone
 
 This folder structure is copied into the image in the Dockerfile in this folder.
 
+Then you need to copy the mysql-connector jar file into the 'lib' folder.
+
+

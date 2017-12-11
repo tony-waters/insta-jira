@@ -1,3 +1,5 @@
 .idea
 jira/docker/jira-6.4.11-standalone
 mysql-connector-java-5.1.45.tar.gz
+backups
+*.zip

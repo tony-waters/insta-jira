@@ -1,5 +1,7 @@
 FROM openjdk:8
 
+RUN whoami
+
 # copy files to jira run directory
 RUN mkdir /opt/jira && cd /opt/jira
 COPY jira-6.4.11-standalone /opt/jira
