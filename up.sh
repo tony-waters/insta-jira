@@ -8,7 +8,7 @@ fi
 
 if [ ! -f atlassian-jira-software-7.8.2-standalone ]; then
     echo "======> Extracting JIRA"
-    tar -xvzf jira/docker/atlassian-jira-software-7.8.2.tar.gz
+    tar -xvzf jira/docker/atlassian-jira-software-7.8.2.tar.gz -C jira/docker/
 fi
 
 echo "======> Creating JIRA"
