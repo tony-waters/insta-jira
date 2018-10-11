@@ -6,7 +6,7 @@ if [ ! -f jira/docker/atlassian-jira-software-7.8.2.tar.gz ]; then
     wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.8.2.tar.gz -P jira/docker/
 fi
 
-if [ ! -f atlassian-jira-software-7.8.2-standalone ]; then
+if [ ! -f jira/docker/atlassian-jira-software-7.8.2-standalone ]; then
     echo "======> Extracting JIRA"
     tar -xvzf jira/docker/atlassian-jira-software-7.8.2.tar.gz -C jira/docker/
 fi
