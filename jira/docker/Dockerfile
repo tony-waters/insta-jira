@@ -1,6 +1,8 @@
 FROM openjdk:8-jre
 
 RUN whoami
+USER root
+RUN find -name java
 
 # copy files to jira run directory
 RUN mkdir /opt/jira
@@ -13,7 +15,7 @@ ENV JIRA_HOME=/opt/jira-home
 
 RUN java -version
 
-USER root
+ENV JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/
 
 CMD ./opt/jira/bin/start-jira.sh -fg
 
