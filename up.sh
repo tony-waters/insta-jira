@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-echo "======> Downloading JIRA"
-wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.8.2.tar.gz -P jira/docker/
-tar -xvzf jira/docker/atlassian-jira-software-7.8.2.tar.gz
+if [ -ne jira/docker/atlassian-jira-software-7.8.2.tar.gz ]; then
+    echo "======> Downloading JIRA"
+    wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.8.2.tar.gz -P jira/docker/
+    tar -xvzf jira/docker/atlassian-jira-software-7.8.2.tar.gz
+fi
 
 echo "======> Creating JIRA"
 docker-compose up -d
