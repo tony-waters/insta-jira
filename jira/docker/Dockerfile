@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8-jre
 
 RUN whoami
 
@@ -11,7 +11,7 @@ RUN ls -la /opt/jira
 RUN mkdir /opt/jira-home
 ENV JIRA_HOME=/opt/jira-home
 
-RUN java --version
+RUN java -version
 
 
 CMD ./opt/jira/bin/start-jira.sh -fg
