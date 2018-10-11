@@ -13,6 +13,7 @@ ENV JIRA_HOME=/opt/jira-home
 
 RUN java -version
 
+USER root
 
 CMD ./opt/jira/bin/start-jira.sh -fg
 
