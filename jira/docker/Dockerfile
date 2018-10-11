@@ -4,7 +4,7 @@ RUN whoami
 
 # copy files to jira run directory
 RUN mkdir /opt/jira && cd /opt/jira
-COPY atlassian-jira-software-7.8.2 /opt/jira
+COPY atlassian-jira-software-7.8.2-standalone /opt/jira
 RUN ls -la /opt/jira
 
 # create jira home directory
