@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 # download JIRA if it does not exist
-if [ ! -f jira/docker/atlassian-jira-software-7.8.2.tar.gz ]; then
+if [ ! -f jira/docker/atlassian-jira-software-7.8.4.tar.gz ]; then
     echo "======> Downloading JIRA"
-    wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.8.2.tar.gz -P jira/docker/
+    wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.8.4.tar.gz -P jira/docker/
 fi
 
-if [ ! -f jira/docker/atlassian-jira-software-7.8.2-standalone ]; then
+if [ ! -f jira/docker/atlassian-jira-software-7.8.4-standalone ]; then
     echo "======> Extracting JIRA"
-    tar -xvzf jira/docker/atlassian-jira-software-7.8.2.tar.gz -C jira/docker/
+    tar -xvzf jira/docker/atlassian-jira-software-7.8.4.tar.gz -C jira/docker/
 fi
 
 echo "======> Creating JIRA"
