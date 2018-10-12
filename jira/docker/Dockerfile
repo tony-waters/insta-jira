@@ -17,6 +17,8 @@ RUN java -version
 
 ENV JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/
 
+RUN ls -la /opt/atlassian/jira/jre/bin
+
 CMD ./opt/jira/bin/start-jira.sh -fg
 
 
