@@ -2,7 +2,7 @@ FROM openjdk:8-jre
 
 RUN whoami
 USER root
-RUN find -name java
+#RUN find -name java
 
 # copy files to jira run directory
 RUN mkdir /opt/jira
