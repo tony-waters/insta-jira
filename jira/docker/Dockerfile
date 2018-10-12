@@ -13,11 +13,11 @@ RUN ls -la /opt/jira
 RUN mkdir /opt/jira-home
 ENV JIRA_HOME=/opt/jira-home
 
-RUN java -version
+#RUN java -version
 
-ENV JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/
+#ENV JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/
 
-RUN ls -la /opt/atlassian/jira/jre/bin
+#RUN ls -la /opt/atlassian/jira/jre/bin
 
 CMD ./opt/jira/bin/start-jira.sh -fg
 
