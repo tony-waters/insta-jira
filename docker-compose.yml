@@ -9,6 +9,8 @@ services:
       - 8080:8080
     networks:
       - jiranet
+    environment:
+      JRE_HOME: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/
 
   mysql:
     container_name: mysql
