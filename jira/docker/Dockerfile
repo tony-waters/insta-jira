@@ -1,4 +1,4 @@
-FROM openjdk:8-jre
+FROM centos:7
 
 RUN whoami
 USER root
