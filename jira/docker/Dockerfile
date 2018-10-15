@@ -21,7 +21,7 @@ ENV JIRA_HOME=/opt/jira-home
 #RUN ls -la /opt/jira/jre/bin
 RUN ls -la /opt/jira/bin
 
-CMD ./opt/jira/bin/start-jira.sh -fg
+CMD [ "./opt/jira/bin/start-jira.sh", "-fg" ]
 
 
 
