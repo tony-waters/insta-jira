@@ -1,4 +1,5 @@
-FROM centos:7
+#FROM centos:7
+FROM airdock/oracle-jdk:1.8
 
 RUN whoami
 USER root
